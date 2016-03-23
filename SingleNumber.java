@@ -39,6 +39,8 @@ public class SingleNumber{
     /**
      * 使用位图法，将数组A中的数，并将位图数组中得对应下标置1，
      * 如果已经为1，则说明重复了
+     * 如果数组中的数的最大值超过了数组的长度，那么bitArray得大小必须是
+     * 最大值+1
      */
     public int bitmapSingleNumber(int A[]){
         int[] bitArray = new int[A.length + 1];
